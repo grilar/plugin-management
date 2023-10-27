@@ -1,0 +1,21 @@
+{
+    "name": "grilar/plugin-management",
+    "description": "Plugin management package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\PluginManagement\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\PluginManagement\\Providers\\PluginManagementServiceProvider"
+            ]
+        }
+    }
+}
